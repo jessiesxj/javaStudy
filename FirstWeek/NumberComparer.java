@@ -12,14 +12,17 @@ import java.util.Scanner;
 public class NumberComparer {
 
     public static void main(String[] args){
-        int n;
-        Scanner scanner= new Scanner(System.in);
+        
+        Scanner scanner = new Scanner(System.in);
+        
         System.out.print("Please enter the value of 'x':");
-        int x=scanner.nextInt();
+        int x = scanner.nextInt();
         System.out.print("Please enter the value of 'y':");
-        int y=scanner.nextInt();
+        int y = scanner.nextInt();
         System.out.print("Please enter the value of 'z':");
-        int z=scanner.nextInt();
+        int z = scanner.nextInt();
+        
+        int n;
         if (x>y){
             n=x;
             x=y;
@@ -30,6 +33,13 @@ public class NumberComparer {
             y=z;
             z=y;
         };
+        if (x>y){
+            n=x;
+            x=y;
+            y=n;
+        };
+        
         System.out.println("arry x,y,z from min to max is:"+" "+x+" "+y+" "+z);
     }
+    
 }
