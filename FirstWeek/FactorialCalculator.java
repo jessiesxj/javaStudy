@@ -6,14 +6,13 @@
  * sum=1!+2!+...+20!
  * */
 
-public class Factorial {
+public class FactorialCalculator {
     public static void main(String[] args){
-        int i;
         long sum=0;
-        long x=1;
-        for(i=1;i<=20;i++){
-            x=x*i;
-            sum+=x;
+        long factorial=1;
+        for(int i=1;i<=20;i++){
+            factorial=factorial*i;
+            sum+=factorial;
         }
         System.out.println("1!+2!+...+20!="+sum);
     }
