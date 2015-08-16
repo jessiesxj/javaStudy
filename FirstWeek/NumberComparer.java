@@ -22,31 +22,23 @@ public class NumberComparer {
         System.out.print("Please enter the value of 'z':");
         Integer z = scanner.nextInt();
         
-        int n;
+        Integer tmp;
         if (x>y){
-          swap(x,y);
+            tmp=x;
+            x=y;
+            y=tmp;
         }
         if (y>z){
-          swap(z,y);
+            tmp=y;
+            y=z;
+            z=tmp;
         }
         if (x>y){
-         swap(x,y);
+            tmp=x;
+            x=y;
+            y=tmp;
         }
         
         System.out.println("arry x,y,z from min to max is:"+" "+x+" "+y+" "+z);
     }
-    
-    private static void swap(Integer x, Integer  y)
-    {
-        if (x==y) 
-        {
-            return;
-        }
-        
-        Integer tmp;
-        tmp=x;
-        x=y;
-        y=tmp;
-    }
-    
 }
