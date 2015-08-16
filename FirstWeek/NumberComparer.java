@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-public class ArrayPrint {
+public class NumberComparer {
 
     public static void main(String[] args){
         int n;
