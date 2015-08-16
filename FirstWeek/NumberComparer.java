@@ -16,30 +16,37 @@ public class NumberComparer {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Please enter the value of 'x':");
-        int x = scanner.nextInt();
+        Integer x = scanner.nextInt();
         System.out.print("Please enter the value of 'y':");
-        int y = scanner.nextInt();
+        Integer y = scanner.nextInt();
         System.out.print("Please enter the value of 'z':");
-        int z = scanner.nextInt();
+        Integer z = scanner.nextInt();
         
         int n;
         if (x>y){
-            n=x;
-            x=y;
-            y=n;
-        };
+          swap(x,y);
+        }
         if (y>z){
-            n=y;
-            y=z;
-            z=n;
-        };
+          swap(z,y);
+        }
         if (x>y){
-            n=x;
-            x=y;
-            y=n;
-        };
+         swap(x,y);
+        }
         
         System.out.println("arry x,y,z from min to max is:"+" "+x+" "+y+" "+z);
+    }
+    
+    private static void swap(Integer x, Integer  y)
+    {
+        if (x==y) 
+        {
+            return;
+        }
+        
+        Integer tmp;
+        tmp=x;
+        x=y;
+        y=tmp;
     }
     
 }
