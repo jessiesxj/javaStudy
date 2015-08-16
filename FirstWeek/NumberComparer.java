@@ -31,7 +31,7 @@ public class NumberComparer {
         if (y>z){
             n=y;
             y=z;
-            z=y;
+            z=n;
         };
         if (x>y){
             n=x;
